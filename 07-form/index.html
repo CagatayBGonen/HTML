@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Oluşturma</title>
+    <style>
+      .baslik01 {
+        text-align: left;
+        text-emphasis: strong;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="baslik01">Form Oluşturma</h1>
+    <hr />
+    <h2 class="balik01">kayıt Formu</h2>
+    <hr />
+    <form action="server/kayit.js">
+      <p>
+        <label for="ad">Adınız</label>
+        <input id="ad" name="ad" type="text" placeholder="Ahmet" required />
+      </p>
+      <p>
+        <label for="soyad">Soyadınız</label>
+        <input id="soyad" name="soyad" type="text" placeholder="Yılmaz" />
+      </p>
+      <p>
+        <label for="sifre">Şifreniz</label>
+        <input id="sifre" name="sifre" type="password" minlength="6" />
+      </p>
+
+      <p>
+        <label for="deneyim">Deneyim</label>
+        <input id="deneyim" name="deneyim" type="number" min="0" max="10" />
+      </p>
+      <p>
+        <label>Hobileriniz</label><br />
+
+        <input type="checkbox" name="futbol" id="futbol" value="futbol" />
+        <label for="futbol">Futbol</label><br />
+        <input type="checkbox" name="voleybol" id="voleybol" value="voleybol" />
+        <label for="voleybol">Voleybol</label><br />
+        <input
+          type="checkbox"
+          name="basketbol"
+          id="basketbol"
+          value="basketbol"
+        />
+        <label for="basketbol">Basketbol</label>
+      </p>
+      <p>
+        <label for="cinsiyet">Cinsiyet</label><br />
+        <input type="radio" name="cinsiyet" id="bay" />
+        <label for="bay">Bay</label><br />
+        <input type="radio" name="cinsiyet" id="bayan" />
+        <label for="bayan">Bayan</label><br />
+      </p>
+      <p>
+        <label for="medeni">Medeni Hali</label><br />
+        <input type="radio" name="medeni" id="evli" value="evli" />
+        <label for="evli">Evli</label><br />
+        <input type="radio" name="medeni" id="bekar" value="bekar" />
+        <label for="bekar">Bekar</label><br />
+      </p>
+      <p>
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar" />
+      </p>
+      <p>
+        <label for="time">zaman seç</label>
+        <input type="time" name="time" id="time" />
+      </p>
+      <p>
+        <label for="date">Doğum Tarihi</label>
+        <input type="date" name="bdate" id="date" />
+      </p>
+      <p>
+        <label for="dogum_yeri">Doğum Yeri</label>
+        <select name="dogum" id="dogum_yeri">
+          <!--size=""(kaç tane seçeneğin gözükeceğini ayarlıyor.default değer 1'dir) multiple(birden fazla seçim yapmanı sağlıyor)-->
+          <option value="1">Adana</option>
+          <option value="2">Ankara</option>
+          <option value="3">İzmir</option>
+          <option value="4">Muğla</option>
+        </select>
+      </p>
+      <p>
+        <label for="adres">Adres</label><br />
+        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Gönder" />
+        <input type="button" value="Kontrol Et" disabled />
+        <input type="reset" value="Temizle" />
+      </p>
+    </form>
+  </body>
+</html>
