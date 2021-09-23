@@ -1,0 +1,9 @@
+.menu {
+  background-color: gray;
+  text-align: center;
+  width: 200px;
+}
+.aktif {
+  background-color: black;
+  color: white;
+}
