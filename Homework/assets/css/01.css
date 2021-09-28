@@ -1,0 +1,41 @@
+.table01 {
+  width: 70%;
+}
+.table01 thead,
+.table01 tfoot {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+.table01 tbody {
+  background-color: rgb(148, 146, 146);
+}
+.light01 {
+  background-color: rgb(196, 193, 193);
+}
+.table01 tfoot {
+  text-align: right;
+}
+.button01 {
+  width: 70%;
+  text-align: right;
+}
+.button02,
+.button03 {
+  background-color: orange;
+}
+.button02:hover {
+  background-color: rgb(168, 110, 2);
+  color: white;
+  font-size: 1rem;
+}
+.button03:hover {
+  background-color: rgb(168, 110, 2);
+  color: white;
+  font-size: 1rem;
+}
+.table01 .symbol01 {
+  text-align: center;
+}
+.clipboard {
+  margin-right: 1rem;
+}
