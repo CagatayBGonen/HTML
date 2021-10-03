@@ -1,0 +1,14 @@
+.menu {
+  width: 200px;
+}
+.menu .button {
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 5px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid rgb(141, 175, 238);
+  margin: 0;
+}
