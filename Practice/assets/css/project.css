@@ -7,7 +7,76 @@ body {
   font-family: "Fredoka One", cursive;
   background-image: repeating-linear-gradient(
     to right,
-    rgb(230, 137, 152),
+    rgb(218, 76, 100),
     rgb(111, 111, 236)
   );
+  color: white;
+}
+.container {
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px, 15px;
+}
+.container h2 {
+  font-size: 2rem; /* 1rem = 16px  */
+}
+.user_input {
+  border: 1px solid black;
+  text-align: center;
+  width: 350px;
+}
+.user_input input {
+  width: 80%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-right: -5px;
+}
+.user_input input:focus {
+  box-shadow: 0 0 10px rgb(223, 62, 34);
+  border: 1px solid rgb(223, 62, 34);
+}
+.user_input button {
+  cursor: pointer;
+  padding: 8px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  width: fit-content;
+}
+.user_input button:hover {
+  background-color: transparent;
+  color: white;
+}
+.to_do_list {
+  width: 500px;
+  margin: auto;
+}
+.item {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  text-transform: uppercase;
+}
+.item:hover {
+  box-shadow: 0 0 5px hotpink;
+  border: 1px solid hotpink;
+}
+.i {
+  cursor: pointer;
+  margin: 0 5px;
 }
