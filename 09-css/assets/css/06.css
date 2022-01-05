@@ -6,9 +6,13 @@
   text-align: center;
   padding: 5px;
 }
+.menu:hover ul {
+  display: block; /*üzerine gelince gosteriyor*/
+}
 .menu ul {
   list-style: none;
   padding: 0;
   border: 1px solid rgb(141, 175, 238);
   margin: 0;
+  display: none;
 }
